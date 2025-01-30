@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Shop</title>
+    <!-- tailwaind script  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- deisyUI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- box icon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- tailwaind css  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary': '#179800',
+                'secondary': '#EFEBE3',
+              },
+              fontFamily: {
+                'sora': ['Sora', 'sans-serif']
+              }
+            }
+          }
+        }
+    </script>
+
+</head>
+<body class="font-sora">
+
+    <!-- header  -->
+
+    <header class="border-b-2 border-primary lg:border-none">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <img src="./c2-assets/logo-header.png" class="w-24" alt="">
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Products</a></li>
+                <li><a>Services</a></li>
+                </li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end hidden lg:flex gap-4">
+                <div class="hidden gap-4 lg:block">
+                    <box-icon name='search-alt-2' color='black' ></box-icon>
+                    <box-icon name='cart-alt'></box-icon>
+                </div>
+                <a class="btn btn-sm bg-white border-black px-6">Log in</a>
+                <a class="btn btn-sm border-black text-white bg-primary px-6">Register</a>
+            </div>
+            <div class="w-full flex justify-end lg:hidden">
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a>Products</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+    </header>
+
+    <!-- main  -->
+     <section class="mt-10 flex flex-col justify-between items-center h-4/5 w-full bg-gradient-to-t from-secondary to-white">
+        <div class="text-center ">
+            <div class="text-2xl lg:text-5xl font-bold"><h1>Freshness <span class="text-primary">You Can <br>
+                Count On</span>, Prices You’ll Love!</h1></div>
+            <div class="mt-4"><p>Get your groceries delivered to your doorsteps in less than 2 hours. </p></div>
+        </div>
+        <div>
+            <img class="w-full" src="./c2-assets/hero-vegetables.png" alt="">
+        </div>
+     </section>
+
+</body>
+</html>
